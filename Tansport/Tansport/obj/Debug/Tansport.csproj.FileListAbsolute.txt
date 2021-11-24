@@ -1,0 +1,14 @@
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\Tansport.exe.config
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\Tansport.exe
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\Tansport.pdb
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.csproj.AssemblyReference.cache
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.Properties.Resources.resources
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.FuelList.resources
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.Logs.resources
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.MainWindow.resources
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.ShowLogs.resources
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.VehiclesList.resources
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.csproj.GenerateResource.cache
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.csproj.CoreCompileInputs.cache
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.exe
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.pdb
