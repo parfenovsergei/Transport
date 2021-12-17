@@ -1,0 +1,10 @@
+C:\Users\parfe\source\repos\Transport\Tansport\Model\bin\Debug\Model.dll
+C:\Users\parfe\source\repos\Transport\Tansport\Model\bin\Debug\Model.pdb
+C:\Users\parfe\source\repos\Transport\Tansport\Model\bin\Debug\View.dll
+C:\Users\parfe\source\repos\Transport\Tansport\Model\bin\Debug\View.pdb
+C:\Users\parfe\source\repos\Transport\Tansport\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\parfe\source\repos\Transport\Tansport\Model\obj\Debug\Model.Properties.Resources.resources
+C:\Users\parfe\source\repos\Transport\Tansport\Model\obj\Debug\Model.csproj.GenerateResource.cache
+C:\Users\parfe\source\repos\Transport\Tansport\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\parfe\source\repos\Transport\Tansport\Model\obj\Debug\Model.dll
+C:\Users\parfe\source\repos\Transport\Tansport\Model\obj\Debug\Model.pdb

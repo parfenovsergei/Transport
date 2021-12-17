@@ -29,36 +29,39 @@ namespace Tansport.View
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.submitButton = new System.Windows.Forms.Button();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.numericUpDownStartSpeed = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxFuelType = new System.Windows.Forms.ComboBox();
+            this.comboBoxType = new System.Windows.Forms.ComboBox();
+            this.numericUpDownFuelConsumption = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownFuelTankCapacity = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownMaxSpeed = new System.Windows.Forms.NumericUpDown();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStartSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFuelConsumption)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFuelTankCapacity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.submitButton, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.titleLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -74,43 +77,44 @@ namespace Tansport.View
             this.tableLayoutPanel1.Size = new System.Drawing.Size(411, 358);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // submitButton
             // 
-            this.button1.Location = new System.Drawing.Point(3, 315);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(402, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.submitButton.Location = new System.Drawing.Point(3, 315);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(402, 40);
+            this.submitButton.TabIndex = 0;
+            this.submitButton.Text = "OK";
+            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
-            // label1
+            // titleLabel
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label1.Location = new System.Drawing.Point(46, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "You entered data about 0 of 5 vehicles";
+            this.titleLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.titleLabel.Location = new System.Drawing.Point(46, 11);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(318, 22);
+            this.titleLabel.TabIndex = 1;
+            this.titleLabel.Text = "You entered data about 0 of 5 vehicles";
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown2, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.numericUpDownStartSpeed, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox1, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox2, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown1, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown3, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown4, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.comboBoxFuelType, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.comboBoxType, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.numericUpDownFuelConsumption, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.numericUpDownFuelTankCapacity, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.numericUpDownMaxSpeed, 1, 5);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 47);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
@@ -123,7 +127,14 @@ namespace Tansport.View
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(403, 262);
             this.tableLayoutPanel2.TabIndex = 2;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
+            // 
+            // numericUpDownStartSpeed
+            // 
+            this.numericUpDownStartSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownStartSpeed.Location = new System.Drawing.Point(208, 183);
+            this.numericUpDownStartSpeed.Name = "numericUpDownStartSpeed";
+            this.numericUpDownStartSpeed.Size = new System.Drawing.Size(188, 20);
+            this.numericUpDownStartSpeed.TabIndex = 10;
             // 
             // label2
             // 
@@ -191,61 +202,57 @@ namespace Tansport.View
             this.label8.TabIndex = 6;
             this.label8.Text = "Fuel tank capacity";
             // 
-            // comboBox1
+            // comboBoxFuelType
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(204, 54);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 21);
-            this.comboBox1.TabIndex = 7;
+            this.comboBoxFuelType.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxFuelType.FormattingEnabled = true;
+            this.comboBoxFuelType.Location = new System.Drawing.Point(204, 54);
+            this.comboBoxFuelType.Name = "comboBoxFuelType";
+            this.comboBoxFuelType.Size = new System.Drawing.Size(196, 21);
+            this.comboBoxFuelType.TabIndex = 7;
             // 
-            // comboBox2
+            // comboBoxType
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(204, 11);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(196, 21);
-            this.comboBox2.TabIndex = 8;
+            this.comboBoxType.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxType.FormattingEnabled = true;
+            this.comboBoxType.Location = new System.Drawing.Point(204, 11);
+            this.comboBoxType.Name = "comboBoxType";
+            this.comboBoxType.Size = new System.Drawing.Size(196, 21);
+            this.comboBoxType.TabIndex = 8;
             // 
-            // numericUpDown1
+            // numericUpDownFuelConsumption
             // 
-            this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown1.Location = new System.Drawing.Point(208, 140);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(188, 20);
-            this.numericUpDown1.TabIndex = 9;
+            this.numericUpDownFuelConsumption.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownFuelConsumption.Location = new System.Drawing.Point(208, 140);
+            this.numericUpDownFuelConsumption.Name = "numericUpDownFuelConsumption";
+            this.numericUpDownFuelConsumption.Size = new System.Drawing.Size(188, 20);
+            this.numericUpDownFuelConsumption.TabIndex = 9;
             // 
-            // numericUpDown2
+            // numericUpDownFuelTankCapacity
             // 
-            this.numericUpDown2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown2.Location = new System.Drawing.Point(208, 183);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(188, 20);
-            this.numericUpDown2.TabIndex = 10;
+            this.numericUpDownFuelTankCapacity.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownFuelTankCapacity.Location = new System.Drawing.Point(208, 97);
+            this.numericUpDownFuelTankCapacity.Name = "numericUpDownFuelTankCapacity";
+            this.numericUpDownFuelTankCapacity.Size = new System.Drawing.Size(188, 20);
+            this.numericUpDownFuelTankCapacity.TabIndex = 11;
             // 
-            // numericUpDown3
+            // numericUpDownMaxSpeed
             // 
-            this.numericUpDown3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown3.Location = new System.Drawing.Point(208, 97);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(188, 20);
-            this.numericUpDown3.TabIndex = 11;
+            this.numericUpDownMaxSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownMaxSpeed.Location = new System.Drawing.Point(208, 228);
+            this.numericUpDownMaxSpeed.Name = "numericUpDownMaxSpeed";
+            this.numericUpDownMaxSpeed.Size = new System.Drawing.Size(188, 20);
+            this.numericUpDownMaxSpeed.TabIndex = 12;
             // 
-            // numericUpDown4
+            // errorProvider
             // 
-            this.numericUpDown4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown4.Location = new System.Drawing.Point(208, 228);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(188, 20);
-            this.numericUpDown4.TabIndex = 12;
+            this.errorProvider.ContainerControl = this;
             // 
             // VehiclesList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 371);
+            this.ClientSize = new System.Drawing.Size(446, 371);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "VehiclesList";
             this.Text = "VehiclesList";
@@ -253,10 +260,11 @@ namespace Tansport.View
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStartSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFuelConsumption)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFuelTankCapacity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -264,8 +272,8 @@ namespace Tansport.View
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -273,11 +281,12 @@ namespace Tansport.View
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.ComboBox comboBoxFuelType;
+        private System.Windows.Forms.ComboBox comboBoxType;
+        private System.Windows.Forms.NumericUpDown numericUpDownStartSpeed;
+        private System.Windows.Forms.NumericUpDown numericUpDownFuelConsumption;
+        private System.Windows.Forms.NumericUpDown numericUpDownFuelTankCapacity;
+        private System.Windows.Forms.NumericUpDown numericUpDownMaxSpeed;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

@@ -86,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\FuelList.resx">
       <DependentUpon>FuelList.cs</DependentUpon>
@@ -116,7 +117,63 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Road.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TraRoad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TroRoad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bicycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HorseDrawnCarriage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motorcycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scooter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trolleybus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{f7731fc5-f276-4990-94dc-406b4027cfbf}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Presenter\Presenter.csproj">
+      <Project>{4aa9b8e4-5fa9-4198-a9bc-50532fb0bc73}</Project>
+      <Name>Presenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\View\View.csproj">
+      <Project>{2db442bc-f2d3-448a-acb4-3d1256305f9f}</Project>
+      <Name>View</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

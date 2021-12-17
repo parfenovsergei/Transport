@@ -12,3 +12,9 @@ C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.cspro
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.csproj.CoreCompileInputs.cache
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.exe
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.pdb
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\Model.dll
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\Presenter.dll
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\View.dll
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\Model.pdb
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\Presenter.pdb
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\View.pdb

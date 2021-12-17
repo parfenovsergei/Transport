@@ -1,58 +1,102 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows.Forms;
+using Presenter;
+using View;
 
 namespace Tansport.View
 {
-    public partial class MainWindow : Form
+    public partial class MainWindow : Form, ITransportView
     {
+        //private DateTime timeSinceStart, timeOfMoveAllVehicles, timeOfStopVehicles;
+        private Stopwatch timeSinceStart = new Stopwatch();
+        private bool motionFlag;
+        private int vehicleCount = 0;
+        private TransportPresenter _presenter;
         public MainWindow()
         {
             InitializeComponent();
+            _presenter = new TransportPresenter(this);
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            ShowLogs showLogs = new ShowLogs();
-            showLogs.ShowDialog();
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void createListOfFuelButton_Click(object sender, EventArgs e)
         {
             FuelList fuelList = new FuelList();
             fuelList.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void createVehiclesButton_Click(object sender, EventArgs e)
         {
-            VehiclesList vehiclesList = new VehiclesList();
-            vehiclesList.ShowDialog();
+            VehiclesList vehicleList = new VehiclesList();
+            vehicleList.FormClosed += _presenter.ShowVehicles;
+            vehicleList.ShowDialog();
+            for (int i = 0; i < Model.ApplicationContext.VehicleInForms.Count; i++)
+            {
+                if(Model.ApplicationContext.VehicleInForms[i].PictureBox.Visible)
+                {
+                    ++vehicleCount;
+                    labelVehicleCount.Text = vehicleCount.ToString();
+                }
+            }
+            vehicleCount = 0;
+        }
+
+        public List<PictureBox> GetPictureBoxWithVehicle()
+        {
+            List<PictureBox> pictureBoxes = new List<PictureBox>();
+            pictureBoxes.Add(pictureBox6);
+            pictureBoxes.Add(pictureBox7);
+            pictureBoxes.Add(pictureBox8);
+            pictureBoxes.Add(pictureBox9);
+            pictureBoxes.Add(pictureBox10);
+
+            return pictureBoxes;
+        }
+
+        async private void startButton_Click(object sender, EventArgs e)
+        {
+            motionFlag = true;
+            if (!timeSinceStart.IsRunning)
+                timeSinceStart.Start();
+            _presenter.Start();
+            while (true)
+            {
+                labelTimeSinceStart.Text = timeSinceStart.Elapsed.ToString();
+                await Task.Delay(1);
+            }
+        }
+
+        private void stopButton_Click(object sender, EventArgs e)
+        {
+            motionFlag = false;
+            _presenter.Stop();
+        }
+
+        public void Start()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Stop()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CreateVehicle()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CreateFuels()
+        {
+
+        }
+
+        public void ShowAllVehicles()
+        {
+            throw new NotImplementedException();
         }
     }
 }
