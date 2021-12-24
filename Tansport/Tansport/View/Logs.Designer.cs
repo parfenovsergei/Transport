@@ -1,5 +1,5 @@
 ﻿
-namespace Tansport.View
+namespace Transport.View
 {
     partial class Logs
     {
@@ -29,31 +29,49 @@ namespace Tansport.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.LogsRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // tableLayoutPanel1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(0, -1);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(763, 462);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.LogsRichTextBox, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 5);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(761, 458);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // LogsRichTextBox
+            // 
+            this.LogsRichTextBox.Location = new System.Drawing.Point(3, 3);
+            this.LogsRichTextBox.Name = "LogsRichTextBox";
+            this.LogsRichTextBox.Size = new System.Drawing.Size(755, 452);
+            this.LogsRichTextBox.TabIndex = 0;
+            this.LogsRichTextBox.Text = "";
             // 
             // Logs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 463);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Logs";
             this.Text = "Logs";
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.RichTextBox LogsRichTextBox;
     }
 }

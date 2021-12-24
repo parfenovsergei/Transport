@@ -4,9 +4,7 @@ C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\Tansport.pdb
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.csproj.AssemblyReference.cache
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.Properties.Resources.resources
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.FuelList.resources
-C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.Logs.resources
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.MainWindow.resources
-C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.ShowLogs.resources
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.VehiclesList.resources
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.csproj.GenerateResource.cache
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.csproj.CoreCompileInputs.cache
@@ -18,3 +16,8 @@ C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\View.dll
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\Model.pdb
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\Presenter.pdb
 C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\View.pdb
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\IronXL.dll
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\bin\Debug\IronXL.xml
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Transport.View.Logs.resources
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Transport.ShowLogs.resources
+C:\Users\parfe\source\repos\Transport\Tansport\Tansport\obj\Debug\Tansport.View.Form1.resources

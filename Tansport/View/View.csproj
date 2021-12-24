@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IFuelView.cs" />
+    <Compile Include="ILogsView.cs" />
+    <Compile Include="IShowLogsView.cs" />
     <Compile Include="ITransportView.cs" />
     <Compile Include="IVehicleView.cs" />
     <Compile Include="IView.cs" />

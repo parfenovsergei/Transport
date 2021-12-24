@@ -20,7 +20,13 @@ namespace Tansport.View
             InitializeComponent();
             _presenter = new TransportPresenter(this);
         }
-
+        private void showLogsButton_Click(object sender, EventArgs e)
+        {
+            /* ShowLogs showLogs = new ShowLogs();
+             showLogs.ShowDialog();*/
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+        }
         private void createListOfFuelButton_Click(object sender, EventArgs e)
         {
             FuelList fuelList = new FuelList();
@@ -32,6 +38,7 @@ namespace Tansport.View
             VehiclesList vehicleList = new VehiclesList();
             vehicleList.FormClosed += _presenter.ShowVehicles;
             vehicleList.ShowDialog();
+            //подсчет кол-ва тс в данный момент
             for (int i = 0; i < Model.ApplicationContext.VehicleInForms.Count; i++)
             {
                 if(Model.ApplicationContext.VehicleInForms[i].PictureBox.Visible)
@@ -55,17 +62,17 @@ namespace Tansport.View
             return pictureBoxes;
         }
 
-        async private void startButton_Click(object sender, EventArgs e)
+        private void startButton_Click(object sender, EventArgs e)
         {
             motionFlag = true;
             if (!timeSinceStart.IsRunning)
                 timeSinceStart.Start();
             _presenter.Start();
-            while (true)
+            /*while (true)
             {
                 labelTimeSinceStart.Text = timeSinceStart.Elapsed.ToString();
                 await Task.Delay(1);
-            }
+            }*/
         }
 
         private void stopButton_Click(object sender, EventArgs e)

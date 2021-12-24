@@ -9,3 +9,5 @@ C:\Users\parfe\source\repos\Transport\Tansport\Presenter\obj\Debug\Presenter.csp
 C:\Users\parfe\source\repos\Transport\Tansport\Presenter\obj\Debug\Presenter.csproj.CopyComplete
 C:\Users\parfe\source\repos\Transport\Tansport\Presenter\obj\Debug\Presenter.dll
 C:\Users\parfe\source\repos\Transport\Tansport\Presenter\obj\Debug\Presenter.pdb
+C:\Users\parfe\source\repos\Transport\Tansport\Presenter\bin\Debug\IronXL.dll
+C:\Users\parfe\source\repos\Transport\Tansport\Presenter\bin\Debug\IronXL.xml

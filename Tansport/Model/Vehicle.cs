@@ -19,7 +19,11 @@ namespace Model
         public double FuelConsumption { get; set; } = 0;
         public bool InMotion { get; set; } = false;
         public double PassedWay { get; set; } = 0;
+        public List<string> LogString { get; private set; } = new List<string>();
         public DateTime Time { get; set; }
+
+        public bool flag = true;
+        public double MaxPassedWay { get; set; } = 0;
 
         public void Launch()
         {
@@ -27,19 +31,19 @@ namespace Model
             {
                 if (CurrentFuelLevel > 0)
                 {
-                    //ShowMessage("The movement started.");
+                    ShowMessage("The movement started.");
                     CurrentSpeed = StartSpeed;
                     InMotion = true;
                 }
                 else
                 {
-                    //ShowMessage("No fuel, the movement unpossible.");
+                    ShowMessage("No fuel, the movement unpossible.");
                     InMotion = false;
                 }
             }
             else
             {
-                //ShowMessage("The vehicle is already moving.");
+                ShowMessage("The vehicle is already moving.");
             }
         }
 
@@ -47,31 +51,48 @@ namespace Model
         {
             if (InMotion)
             {
-                //ShowMessage("The vehicle is stopped");
+                ShowMessage("The vehicle is stopped");
                 CurrentSpeed = 0;
                 InMotion = false;
             }
             else
             {
-                //ShowMessage("The vehicle has already been stopped.");
+                ShowMessage("The vehicle has already been stopped.");
             }
         }
 
         public void Shift(double time)
         {
-            if (PassedWay / 500 == 0.5)
+            Time = Time.AddSeconds(time);
+            if (PassedWay >= MaxPassedWay/2 && this.flag)
+            {
                 CurrentSpeed = MaxSpeed;
+                this.flag = false;
+            }
 
             double deltaWay = (int)(CurrentSpeed * time) / 1000.0;
 
             PassedWay += deltaWay;
             CurrentFuelLevel -= FuelConsumption / 100.0 * deltaWay;
 
+            //через каждые 5 минут езды 
+            ShowMessage($"{this.Type} passed: {PassedWay}; \t CurrentSpeed: {CurrentSpeed}; \t FuelLevel: {CurrentFuelLevel}");
+
             if (CurrentFuelLevel < 0)
             {
                 CurrentFuelLevel = 0;
+                ShowMessage("CurrentFuelLevel is 0");
             }
+            if (PassedWay >= 500)
+            {
+                ShowMessage("FINISH!");
+            }
+        }   
+        private void ShowMessage(string message)
+        {
+            string logString = $"{Time.ToString("HH:mm:ss")} - {message}";
+            Console.WriteLine(logString);
+            LogString.Add(logString);
         }
-
     }
 }

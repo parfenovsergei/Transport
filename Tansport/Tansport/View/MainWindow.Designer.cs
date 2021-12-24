@@ -94,7 +94,7 @@ namespace Tansport.View
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Location = new System.Drawing.Point(5, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(916, 629);
+            this.groupBox1.Size = new System.Drawing.Size(1000, 608);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Roads";
@@ -326,14 +326,14 @@ namespace Tansport.View
             this.groupBox2.Controls.Add(this.createListOfFuelButton);
             this.groupBox2.Location = new System.Drawing.Point(10, 528);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(897, 97);
+            this.groupBox2.Size = new System.Drawing.Size(984, 97);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buttons";
             // 
             // stopButton
             // 
-            this.stopButton.Location = new System.Drawing.Point(534, 14);
+            this.stopButton.Location = new System.Drawing.Point(593, 14);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(165, 66);
             this.stopButton.TabIndex = 4;
@@ -343,7 +343,7 @@ namespace Tansport.View
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(363, 14);
+            this.startButton.Location = new System.Drawing.Point(403, 14);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(165, 66);
             this.startButton.TabIndex = 3;
@@ -353,16 +353,17 @@ namespace Tansport.View
             // 
             // showLogsButton
             // 
-            this.showLogsButton.Location = new System.Drawing.Point(705, 14);
+            this.showLogsButton.Location = new System.Drawing.Point(786, 14);
             this.showLogsButton.Name = "showLogsButton";
             this.showLogsButton.Size = new System.Drawing.Size(165, 66);
             this.showLogsButton.TabIndex = 2;
             this.showLogsButton.Text = "Show/save logs";
             this.showLogsButton.UseVisualStyleBackColor = true;
+            this.showLogsButton.Click += new System.EventHandler(this.showLogsButton_Click);
             // 
             // createVehiclesButton
             // 
-            this.createVehiclesButton.Location = new System.Drawing.Point(192, 14);
+            this.createVehiclesButton.Location = new System.Drawing.Point(215, 14);
             this.createVehiclesButton.Name = "createVehiclesButton";
             this.createVehiclesButton.Size = new System.Drawing.Size(165, 66);
             this.createVehiclesButton.TabIndex = 1;
@@ -397,7 +398,7 @@ namespace Tansport.View
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 93F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 93F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 93F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(897, 458);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(984, 458);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox2
@@ -405,7 +406,7 @@ namespace Tansport.View
             this.pictureBox2.Image = global::Tansport.Properties.Resources.TroRoad;
             this.pictureBox2.Location = new System.Drawing.Point(3, 96);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(891, 85);
+            this.pictureBox2.Size = new System.Drawing.Size(978, 85);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -414,7 +415,7 @@ namespace Tansport.View
             this.pictureBox3.Image = global::Tansport.Properties.Resources.Road;
             this.pictureBox3.Location = new System.Drawing.Point(3, 189);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(891, 86);
+            this.pictureBox3.Size = new System.Drawing.Size(978, 86);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
@@ -423,7 +424,7 @@ namespace Tansport.View
             this.pictureBox4.Image = global::Tansport.Properties.Resources.TraRoad;
             this.pictureBox4.Location = new System.Drawing.Point(3, 282);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(891, 87);
+            this.pictureBox4.Size = new System.Drawing.Size(978, 87);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
@@ -432,7 +433,7 @@ namespace Tansport.View
             this.pictureBox5.Image = global::Tansport.Properties.Resources.Road;
             this.pictureBox5.Location = new System.Drawing.Point(3, 375);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(891, 87);
+            this.pictureBox5.Size = new System.Drawing.Size(978, 87);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             // 
@@ -441,7 +442,7 @@ namespace Tansport.View
             this.pictureBox1.Image = global::Tansport.Properties.Resources.Road;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(891, 85);
+            this.pictureBox1.Size = new System.Drawing.Size(978, 85);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -449,7 +450,7 @@ namespace Tansport.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 632);
+            this.ClientSize = new System.Drawing.Size(1024, 632);
             this.Controls.Add(this.groupBox1);
             this.Name = "MainWindow";
             this.Text = "MainWindow";

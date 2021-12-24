@@ -3,3 +3,4 @@ C:\Users\parfe\source\repos\Transport\Tansport\View\bin\Debug\View.pdb
 C:\Users\parfe\source\repos\Transport\Tansport\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 C:\Users\parfe\source\repos\Transport\Tansport\View\obj\Debug\View.dll
 C:\Users\parfe\source\repos\Transport\Tansport\View\obj\Debug\View.pdb
+C:\Users\parfe\source\repos\Transport\Tansport\View\obj\Debug\View.csproj.AssemblyReference.cache

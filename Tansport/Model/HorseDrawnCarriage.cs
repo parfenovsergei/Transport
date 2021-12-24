@@ -17,6 +17,7 @@ namespace Model
             FuelTankCapacity = fuelTankCapacity;
             MaxSpeed = maxSpeed;
             StartSpeed = startSpeed;
+            MaxPassedWay = fuelTankCapacity * 100 / fuelConsumption;
 
             CurrentFuelLevel = fuelTankCapacity;
             Type = "HorseDrawnCarriage";

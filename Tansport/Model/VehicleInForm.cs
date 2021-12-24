@@ -38,12 +38,12 @@ namespace Model
         async private void LaunchTask()
         {
             Vehicle.Launch();
-            while (Vehicle.CurrentFuelLevel > 0 && PictureBox.Left < 835)
+            while (Vehicle.CurrentFuelLevel > 0 && PictureBox.Left < 935)
             {
                 PictureBox.Invoke((MethodInvoker)delegate
                 {
                     Vehicle.Shift(300.0);
-                    PictureBox.Left = 20 + (int)((Vehicle.PassedWay / 500.0) * 875.0);
+                    PictureBox.Left = 0 + (int)((Vehicle.PassedWay / 500.0) * 975.0);
                     
                 });
                 await Task.Delay(100);

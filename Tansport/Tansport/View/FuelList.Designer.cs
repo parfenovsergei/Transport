@@ -140,7 +140,7 @@ namespace Tansport.View
             this.ClientSize = new System.Drawing.Size(256, 282);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FuelList";
-            this.Text = "Form1";
+            this.Text = "FuelList";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
